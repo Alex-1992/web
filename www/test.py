@@ -15,3 +15,6 @@ if __name__ == '__main__':
     loop = asyncio.get_event_loop()
     loop.run_until_complete(test(loop))
     loop.close()
+# "C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql" - uroot - pyouyangfan < C:\Users\Administrator\Desktop\awsome\schema.sql
+# "C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql" - u root - p < C: \Users\Administrator\Desktop\awsome\schema.sql
+# "C:\Program Files\MySQL\MySQL Server 8.0\bin"
