@@ -13,8 +13,8 @@ async def create_pool(loop, **kw):
     __pool = await aiomysql.create_pool(
         host=kw.get('host', 'localhost'),
         port=kw.get('port', 3306),
-        user=kw['user'],
-        password=kw['password'],
+        user=kw['db']['user'] if kw['db']['user'] else kw['user'],
+        password=kw['db']['password'] if kw['db']['password'] else kw['password'],
         db=kw['db'],
         charset=kw.get('charset', 'utf8'),
         autocommit=kw.get('autocommit', True),

@@ -51,3 +51,4 @@ except ImportError:
 
 configs = toDict(configs)
 print(configs.debug)
+print(configs['db']['user'])
